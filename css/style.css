@@ -1,0 +1,336 @@
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+
+
+	body {
+		margin: 0px;
+		padding: 0px;
+		background: #fff;
+		font-family: 'poppins', sans-serif;
+		font-size: 12pt;
+		color: #252525;
+	}
+
+	h1, h2, h3, h4 {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	h1 {
+		padding: 0px 0px 20px 0px;
+		letter-spacing: -1px;
+		font-size: 1.8em;
+		color: #252525;
+		font-weight: bold;
+		line-height: 100%;
+	}	
+
+
+	h2 {
+		padding: 0px 0px 20px 0px;
+		letter-spacing: -1px;
+		font-size: 1.6em;
+		color: #252525;
+	}
+
+	h3 {
+		color: #252525;
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+
+	h4 {
+		color: #252525;
+		font-size: 0.8em;
+	}
+
+	p, ol, ul {
+		margin-top: 0px;
+		line-height: 160%;
+	}
+
+	p {
+		margin-bottom: 2em;
+		line-height: 160%;
+	}
+
+
+	strong {
+		font-weight: 700;
+	}
+
+	a {
+		color: #252525;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+		/* Images */
+
+			.image
+			{
+				display: inline-block;
+			}
+			
+				.image img
+				{
+					display: block;
+					width: 100%;
+				}
+
+				.image.featured
+				{
+					display: block;
+					width: 100%;
+					margin: 0 0 2em 0;
+				}
+				
+				.image.full
+				{
+					display: block;
+					width: 100%;
+					margin-bottom: 2em;
+				}
+				
+				.image.left
+				{
+					float: left;
+					margin: 0 2em 2em 0;
+				}
+				
+				.image.centered
+				{
+					display: block;
+					margin: 0 0 2em 0;
+				}
+
+					.image.centered img
+					{
+						margin: 0 auto;
+						width: auto;
+					}
+
+		header
+		{
+			margin-bottom: 1em;
+		}
+			
+			header h2
+			{
+				font-weight: 600;
+			}
+		
+			header .byline
+			{
+				display: block;
+				margin: 0.5em 0 0 0;
+				padding: 0 0 0.5em 0;
+			}
+
+		
+		ul.style li
+		{
+			padding: 0.55em 0em;
+		}
+		
+
+		
+		ul.style a
+		{
+			color: #774535 !important;
+		}
+
+
+		
+		ul.style1 li
+		{
+			padding: 0.6em 0em;
+			height: 100px;
+		}
+		
+		ul.style1 a
+		{
+			color: #774535 !important;
+		}
+
+		ul.style1 img
+		{
+			float: left;
+			margin-right: 1em;
+		}
+	
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header
+	{
+		position: relative;
+	}
+
+		#header .container
+		{
+			position: relative;
+			padding: 0em 0em;
+		}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+	
+		#logo h1
+		{
+			color: #252525;
+		}
+	
+		#logo a
+		{
+			display: block;
+			text-decoration: none;
+			font-size: 2.8em;
+			font-weight: 600;
+			color: #252525;
+		}
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+	#nav
+	{
+		position: absolute;
+		right: 0em;
+		top: 5em;
+	}
+
+		#nav > div > div > ul > li
+		{
+			float: left;
+			list-style-type: none;
+		}
+		
+			#nav > div > div > ul > li:last-child
+			{
+				padding-right: 0;
+			}
+
+			#nav > div > div > ul > li > a,
+			#nav > div > div > ul > li > span
+			{
+				display: block;
+				margin-left: 0.7em;
+				letter-spacing: 0.06em;
+				text-decoration: none;
+				font-size: 1em;
+				outline: 0;
+				color: #252525;
+			}
+
+			#nav > div > div li.active a
+			{
+				border-radius: 5px;
+				color: #252525;
+			}
+
+			#nav > div > div > ul > li > ul
+			{
+				display: none;
+			}
+
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+	#main
+	{
+		position: relative;
+		padding: 6em 0em;
+		background: #ffffff;
+		color: #252525;
+	}
+	
+	#main header h2
+	{
+		color: #252525;
+	}
+	
+	#main a
+	{
+		color: #252525;
+	}
+
+/*********************************************************************************/
+/* Featured                                                                      */
+/*********************************************************************************/
+
+	#featured
+	{
+		position: relative;
+		padding: 6em 0em 4em 0em;
+		background: #FFF;
+	}
+
+/*********************************************************************************/
+/* Marketing                                                                     */
+/*********************************************************************************/
+
+	#marketing
+	{
+		position: relative;
+		padding: 6em 0em;
+		background: #fff;
+		color: #252525;
+	}
+	
+	#marketing header h2
+	{
+		color: #0271ba;
+	}
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+	
+	#copyright
+	{
+		position: relative;
+		padding: 3em 0em;
+		text-align: center;
+		color: #ffffff;
+		background-color: #252525;
+	}
+		
+	#copyright a
+	{
+		text-decoration: none;
+		color: #fff !important;
+	}	
+	
+	
+/*********************************************************************************/
+/* whatsapp float                                                                    */
+/*********************************************************************************/
+
+	.float{
+		position:fixed;
+		width:60px;
+		height:60px;
+		bottom:40px;
+		right:40px;
+		background-color:#25d366;
+		color:#FFF;
+		border-radius:50px;
+		text-align:center;
+	  font-size:30px;
+		box-shadow: 2px 2px 3px #999;
+	  z-index:100;
+	}
+	
+	.my-float{
+		margin-top:16px;
+	}

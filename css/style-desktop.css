@@ -1,0 +1,652 @@
+
+@media screen and (min-width: 769px) {
+
+
+	.container {
+		width:90%;
+		min-width:769px;
+		max-width:1200px;
+		margin:auto;
+	}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+#header {
+	/*position: relative;*/
+	height: 120px;
+}
+
+#header .hamburger {
+	display:none;
+}
+
+
+#header .toggler {
+	display:none;
+}
+
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+	
+		#logo h1
+		{
+			color: #FFF;
+		}
+	
+		#logo a {
+			display: block;
+			text-decoration: none;
+			font-size: 2.8em;
+			font-weight: 600;
+			color: #000;
+		}
+
+	
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+
+#nav
+	{
+		position: absolute;
+		right: 0em;
+		top: 3em;
+
+	}
+
+	#nav > div > div > ul > li
+		{
+			float: left;
+
+		}
+		
+		#nav > div > div > ul > li:last-child
+			{
+				padding-right: 0;
+			}
+
+			#nav > div > div > ul > li > a,
+			#nav > div > div > ul > li > span
+			{
+				display: block;
+				margin-left: 0.7em;
+				padding: 0.80em;
+				letter-spacing: 0.06em;
+				text-decoration: none;
+				font-size: 1em;
+				outline: 0;
+				color: #000;
+			}
+
+			#nav > div > div li.active a
+			{
+				border-radius: 5px;
+				color:#0271ba;
+			}
+
+			#nav > div > div > ul > li > ul
+			{
+				display: none;
+			}
+
+/*********************************************************************************/
+/* reg form / top bar                                                                        */
+/*********************************************************************************/
+
+	#topbar input[type=text], select, textarea
+	{
+		width: 80%;	
+		border: 4px solid;
+		border-radius: 10px;
+		margin-top: 40px;
+		margin-bottom: 16px;
+		color: #000;
+		font-size:4em;
+		background-color: #ffd307;
+		box-sizing: border-box;
+		padding:30px;
+		text-align: center;
+		font-family: 'uknumberplateregular';
+		src: url('UKNumberPlate-2-webfont.eot');
+		text-transform: uppercase;
+		outline:none;
+	}
+
+	#topbar input[type=text]:active {
+		border-radius: 10px;
+	}
+
+	#topbar input[type=text]:focus {
+		background-color: #ffd307;
+	  }
+
+	#topbar input[type=submit] {
+		height: 60px;
+		width: 60px;
+		background-color:#0271ba;
+		color: white;
+		padding: 18px 8px 20px;
+		border: none;
+		border-radius: 35px;
+		cursor: pointer;
+		margin-left: 5px;
+		font-size:1.5em;
+	}
+
+	/* When moving the mouse over the submit button, add a darker color */
+		#topbar input[type=submit]:hover {
+		background-color: #014d80;
+	  	}
+	  
+	  	#topbar {
+		border-radius: 10px;
+		background-color: #fff;
+		padding-top: 40px;
+
+	  	}
+
+	#topbar label {
+	color:#000;
+	font-size:1.5em;
+
+	}	
+
+		.reg-form {
+		padding-top: 10px;
+		width: 600px;
+		margin: auto;
+		}
+
+		#reg1{
+			display: inline-block;
+			text-align: center;
+
+		}
+
+
+	/* Whatsapp */
+	.whatsapp {
+		display: flex;
+		width: 100px;
+	}
+
+	.whatsapp img {
+		width:100px;
+		display: flex;
+		padding-left: 10px;
+	}
+
+	.whatsappcontact {
+		display: flex;
+		width:400px;
+		text-align: right;
+		font-size:1.2em;
+		border: 1px solid #000;
+		border-radius: 5px;
+		padding:5px;
+	}
+
+	.continue {
+		margin-bottom: 20px;
+	}
+
+	.mobile-wa {
+		display:none;
+	}
+
+/*********************************************************************************/
+/* Form                                                                   */
+/*********************************************************************************/
+
+	.formcontainer {
+		width:800px;
+		box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+		padding:2em;
+		background-color:#fff;
+		border: none;
+		margin:auto;
+	}
+
+	.formcontainercontact {
+		width:600px;
+		box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+		padding:2em;
+		background-color:#fff;
+		border: none;
+		margin:auto;
+	}
+
+	.formcontainercontact input[type=text], select, textarea {
+		text-align: left;
+	}
+
+	.contact-form-label{
+		font-size:1em;
+		color: #252525;
+		display:block;
+		opacity:0;
+		text-align: left;
+	}
+
+	.form-group{
+		margin-bottom:2.5em;
+		transition:all .3s;
+		font-weight:300;
+	}
+
+	.form-label{
+		font-size:1em;
+		color: #252525;
+		display:block;
+		opacity:1;
+		text-align: left;
+	}
+	.form-control{
+		box-shadow:none;
+		border-radius:0;
+		border-color:#ccc;
+		border-style:none none solid none;
+		width:100%;
+		font-size:1.25em;
+		transition:all .6s;
+		background-color:#fff;
+		font-family: 'Roboto', sans-serif;
+		text-transform:none;
+		color: #252525;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.form-control::placeholder{
+		color:#a8a8a8;
+		padding-left: 3px;
+	}
+	#selector {
+		color:#a8a8a8;
+	}
+
+	#selector option {
+		color:#252525;
+	}
+
+	.form-control:focus{
+		box-shadow:none;
+		border-color:var(--font-hover-color);
+		outline:none;
+	}
+	
+	.form-control:invalid:focus{
+		border-color:red;
+	}
+	.form-control:valid:focus{
+		border-color:green;
+	}
+	
+	.btn{
+		background: #0271ba;
+		border:1px solid #aaa;
+		border-radius:3px;
+		color:var(--font-color);
+		font-size:1em;
+		padding:10px 50px;
+		text-transform:uppercase;
+		color:#fff;
+		transition: opacity 0.2s ease-in;
+	}
+	.btn:hover{
+		border-color:var(--font-hover-color);
+		/* color:var(--font-hover-color); */
+		opacity:0.7;
+	}
+	textarea{
+		resize:none;
+	}
+	
+	#reg.form-control {
+		text-transform: uppercase;
+	}
+	
+	.focused > .form-label{
+		opacity:1;
+		transform:translateX(0px);
+	
+	}
+
+
+
+
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+	#main
+	{
+		padding: 3em 0em 3em 0em;
+		font-size:18px;
+		background-color: #F2F2F2;
+	}
+
+	.main-info {
+		text-align: center;
+	}
+
+	.style1 {
+		vertical-align: top;
+		text-align: center;
+		width: 100%;
+		color: #000;
+		font-size: 18px;
+	}
+
+	.iconitem {
+		display: inline-block;
+		width: 24%;
+		vertical-align: top;
+	}
+
+	.style1 img {
+		width: 100px;
+		height: 100px;
+	}
+
+	.caption {
+		display: block;
+	}
+
+
+	.style1 h3 {
+		font-size:22px;
+	}
+
+/*********************************************************************************/
+/* Title image                                                                     */
+/*********************************************************************************/
+
+
+	.imagewide {
+		width:100%;
+		height:auto;
+		position: relative;
+		text-align: left;
+		color: rgb(238, 238, 238);
+		font-size:4em;
+		font-weight:bolder;
+	}
+
+
+	.welcome {
+		position: absolute;
+		top: 15%;
+		left: 20%;
+		padding: 0px;
+		letter-spacing: -1px;
+		color: #fff;
+		font-weight: 400;
+		font-size:clamp(2rem, 4vw, 4rem);
+	  }
+
+	  .welcome p {
+		line-height: 120%;
+		font-size:3vw;
+	  } 
+
+/*********************************************************************************/
+/* Featured                                                                      */
+/*********************************************************************************/
+
+	#featured
+	{
+		padding: 3em 0em 3em 0em;
+	}
+
+	#featured > .row {
+		display:flex;
+	}
+
+	.column50 {
+		width:50%;
+	}
+
+	#featured p {
+		padding: 0 1rem;
+	}
+
+	.bplist {
+		padding: 0 1rem;
+	}
+
+/*********************************************************************************/
+/* About                                                                     */
+/*********************************************************************************/
+
+	.bplist ul {
+		list-style: disc;
+		padding-left:20px;
+}
+
+/*********************************************************************************/
+/* Marketing                                                                     */
+/*********************************************************************************/
+
+	#marketing
+	{
+		padding: 4em 0em 3em 0em;
+	}
+
+/*********************************************************************************/
+/* Bike manufacturers                                                                     */
+/*********************************************************************************/
+
+.bikes-brands {
+	padding: 4em 0em 3em 0em;
+}
+
+.bikes-title {
+	text-align: center;
+	font-weight:600;
+}
+
+.bikes-text {
+	text-align: center;
+	font-size:18px;
+}
+
+.logo-item {
+	width: 19%;
+	display:inline-block;
+	text-align: center;	
+}
+
+.logo-item-mobile {
+	width: 19%;
+	display:inline-block;
+	text-align: center;	
+}
+
+.logo-item-mobile img {
+	width:100px;
+	height:100px;
+}
+
+.logo-item img {
+	width:100px;
+	height:100px;
+}
+
+
+	
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+	
+	#copyright {
+		padding: 1em 0em;
+		color:rgb(124, 124, 124);
+	}
+
+	.links {
+		margin-bottom:20px;
+	}
+
+	.links a {
+		padding:0px 40px 0px 40px;
+		margin-bottom: 10px;
+		color:rgb(124, 124, 124);
+	}
+	
+
+
+/*********************************************************************************/
+/* FAQ items                                                                     */
+/*********************************************************************************/
+
+
+	.collapsible {
+		font-family: 'poppins', sans-serif;
+		background-color: #fff;
+		color: #000;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		text-align: left;
+		outline: none;
+		font-size: 18px;
+		border: 2px solid;
+		border-radius:5px;
+		margin-top: 5px;
+	  }
+	  
+	  .faqactive, .collapsible:hover {
+		background-color: #0271ba;
+		color:#fff;
+	  }
+	  
+	  .content {
+		padding: 16px;
+		display: none;
+		overflow: hidden;
+		background-color: #ddddddb6;
+		border-radius:5px;
+		font-size: 16px;
+	  }
+
+	  .content p {
+		margin-bottom:0px;
+	  }
+
+	  .success h2 {
+		  height:100vh;
+		  text-align: center;
+	  }
+
+	  .collapsible:after {
+		content: '\002B'; /* Unicode character for "plus" sign (+) */
+		font-size: 18px;
+		color: #000;
+		float: right;
+		margin-left: 5px;
+	  }
+	  
+	  .faqactive:after {
+		content: "\002d"; /* Unicode character for "minus" sign (-) */
+	  }
+
+	  .faq-sub {
+		  font-size:16px;
+		  font-weight: 400;
+	  }
+
+	  .faq-text {
+		  margin-bottom: 16px;
+	  }
+
+/*********************************************************************************/
+/* Social items                                                                     */
+/*********************************************************************************/
+
+		/* Style all font awesome icons */
+
+	.contact-item {
+		display:flex;
+		align-items: center;
+		padding: 5px;
+		margin: 20px 0px 20px 10px;
+	}
+
+	.contact-item p {
+		align-items: center;
+		margin-bottom: 0px;
+		margin-left: 10px;
+	}
+
+	.fa-facebook {
+		padding: 12px;
+		width: 40px;
+		text-align: center;
+		text-decoration: none;
+		margin: 5px 2px;
+		background: #3B5998;
+		color: white;
+		display: block;
+	  }
+
+	  .float{
+		position:fixed;
+		width:60px;
+		height:60px;
+		bottom:40px;
+		right:40px;
+		background-color:#25d366;
+		color:#FFF;
+		border-radius:50px;
+		text-align:center;
+		font-size:30px;
+		box-shadow: 2px 2px 3px #999;
+		z-index:100;
+		transition: all 0.5s ease-out;
+		overflow: hidden;
+	}
+
+	.float:hover {
+		width:440px;
+	}
+
+	.wa-grabber {
+		font-size: 16px;
+		text-decoration: none;
+		text-align: center;
+		display:inline-flex;
+		overflow: hidden;
+		margin-top:24px;
+	}
+
+	.my-float{
+		margin-top:16px;
+		float:right;
+		padding-right: 16px;
+	}
+
+	.float::before {
+		position:absolute;
+	}
+
+	/* Add a hover effect if you want */
+	.fa:hover {
+		opacity: 0.7;
+	}  
+
+
+	
+
+	  html {
+		visibility: visible;
+		opacity: 1;
+	}
+
+
+}

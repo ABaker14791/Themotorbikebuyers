@@ -1,0 +1,45 @@
+body a {
+    text-decoration: none;
+}
+
+.float {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index:100;
+    transition: all 0.5s ease-out;
+    overflow: hidden;
+}
+
+.float:hover {
+    width:420px;
+}
+
+.my-float{
+    margin-top:16px;
+    float:right;
+    padding-right: 16px;
+    
+}
+
+.float::before {
+    position:absolute;
+}
+
+.wa-grabber {
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    display:inline-flex;
+    overflow: hidden;
+    justify-content: center;
+    margin-top:18px;
+}

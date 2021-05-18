@@ -1,0 +1,664 @@
+@media screen and (max-width: 768px) {
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	* {
+		box-sizing: border-box;
+	}
+
+	body,input,textarea,select
+	{
+		line-height: 1.75em;
+		font-size: 10pt;
+		letter-spacing: 0;
+	}
+
+	h2, h3, h4, h5, h6
+	{
+		font-size: 1.5em;
+	}
+
+	section,
+	article
+	{
+		clear: both;
+		margin: 2em 0 2em 0 !important;
+	}
+
+	section > :first-child,
+	article > :first-child
+	{
+		margin-top: 0 !important;
+	}
+
+	section:first-child,
+	article:first-child
+	{
+		margin-top: 0 !important;
+	}
+	
+	.container
+	{
+		padding: 0em 1em;
+	}
+
+/*********************************************************************************/
+/* Mobile UI                                                                            */
+/*********************************************************************************/
+
+
+#header .toggler {
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 2;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	opacity: 0;
+}
+
+#header .hamburger {
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 1;
+	width: 60px;
+	height: 60px;
+	padding: 1rem;
+	background:#fff;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#header .hamburger > div {
+	position: relative;
+	width: 100%;
+	height:2px;
+	background-color: #000;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	transition: all 0.4s ease;
+}
+
+/* top and bottom lines */
+#header .hamburger > div:before,
+#header .hamburger > div:after {
+	content:'';
+	position: absolute;
+	z-index:1;
+	top:-10px;
+	width: 100%;
+	height:2px;
+	background:inherit;
+}
+
+
+/* bottom line */
+#header .hamburger > div:after {
+	top:10px;
+}
+
+/* toggler animate */
+#header .toggler:checked + .hamburger > div {
+	transform: rotate(135deg);
+}
+
+/* turn lines into x */
+#header .toggler:checked + .hamburger > div:before,
+#header .toggler:checked + .hamburger > div:after {
+	top:0;
+	transform: rotate(90deg);
+}
+
+/*rotate on hover when checked */
+#header .toggler:checked:hover + .hamburger > div {
+	transform:rotate(225deg);
+}
+
+/* show menu */
+#header .toggler:checked ~ #nav {
+	visibility: visible;
+}
+
+#header .toggler:checked ~ #nav > div {
+	transform: scale(1);
+	transition-duration: 0.4s;
+}
+
+#header .toggler:checked ~ #nav > div > div {
+	opacity: 1;
+	transition: opacity 0.4s ease;
+}
+
+			
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	 #header
+	{
+		background-color: #fff;
+		position:fixed;
+		top:0;
+		left:0;
+		z-index: 1;
+	}
+
+	#logo
+	{
+		margin: auto;
+
+		display: block;
+		text-align:center;
+		width: 100vw;
+	}
+
+	#logo img {
+		height: 60px;
+		display: block;
+		margin: auto;
+	}
+	
+		#logo a
+		{
+			display: block;
+		}
+
+	.title img {
+		width:120px;
+	} 
+
+#header #nav {
+	position:fixed;
+	top:0;
+	left: 0;
+	width:100%;
+	height:100%;
+	visibility: hidden; 
+	overflow: hidden;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+}
+
+#header #nav > div {
+	background-color: #fff;
+	border-radius: 50%;
+	width: 200vw;
+	height: 200vw;
+	display: flex;
+	flex: none;
+	align-items: center;
+	justify-content: center;
+	transform: scale(0);
+	transition: all 0.4s ease;
+}
+
+#header #nav > div > div {
+	text-align: center;
+	max-width: 90vw;
+	max-height: 100vh;
+	opacity: 0;
+	transition:opacity 0.4s ease;
+}
+
+#header #nav > div > div > ul {
+	padding:0;
+}
+
+#header #nav > div > div > ul > li {
+	list-style: none;
+	color: #000;
+	font-size:1.5rem;
+	padding: 1rem;
+	float: none;
+
+}
+
+#header #nav > div > div > ul > li > a {
+	color: inherit;
+	text-decoration: none;
+	transition: color 0.4s ease;
+	margin: 0;
+}
+ 
+
+
+/*********************************************************************************/
+/* Hero                                                                       */
+/*********************************************************************************/
+
+
+	.imagewide {
+		margin-top: 60px;
+		width:100%;
+		/* height:auto; */
+		position: relative;
+		text-align: left;
+		color: rgb(238, 238, 238);
+		font-size:clamp(1rem, 4vw, 4rem);
+	}
+
+	.imagewide img {
+		min-height: 100px;
+	}
+
+	.welcome {
+		position: absolute;
+		top: 20%;
+		left: 20%;
+		padding: 0px;
+		letter-spacing: -1px;
+		font-size: 1em;
+		color: #fff;
+		font-weight: 400;
+	  }
+
+
+	.welcome p {
+		line-height: 120%;
+
+	}
+
+	
+
+
+/*********************************************************************************/
+/* Topbar                                                                       */
+/*********************************************************************************/	
+	
+.topbar {
+	padding-top: 50px;
+}
+
+#reg1 {
+	margin:auto;
+	width: 100%;
+	display: block;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#reg1 label {
+	font-size:16px;
+}
+
+.regform {
+	margin: auto;
+}
+
+.mobile-wa {
+	text-align: center;
+	margin-top: 2em;
+}
+
+/*********************************************************************************/
+/* Regform                                                                      */
+/*********************************************************************************/
+
+#topbar input[type=text], select, textarea
+{
+	width: 80%;	
+	border: 2px solid;
+	border-radius: 4px;
+	margin-top: 20px;
+	margin-bottom: 8px;
+	color: #000;
+	font-size:4em;
+	background-color: #ffd307;
+	box-sizing: border-box;
+	padding:0px 10px 0px 10px;
+	text-align: center;
+	font-family: 'uknumberplateregular';
+	src: url('UKNumberPlate-2-webfont.eot');
+	text-transform: uppercase;
+	outline:none;
+}
+
+#topbar input[type=text]:focus {
+	background-color: #ffd307;
+  }
+
+#topbar input[type=submit] {
+
+	background-color:#0271ba;
+	color: white;
+	height:50px;
+	padding: 18px 8px 20px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	margin-left: 5px;
+	font-size:1.5em;
+}
+
+#reg.form-control {
+	text-transform: uppercase;
+}
+
+.continue {
+	margin-bottom: 10px;
+}
+
+
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+	#main
+	{
+		padding: 4em 0em;
+		text-align: center;
+	}
+
+
+	
+/*********************************************************************************/
+/* Featured                                                                      */
+/*********************************************************************************/
+
+	#featured
+	{
+		padding: 4em 0em 2em 0em;
+		margin-top: 60px;
+	}
+
+/*********************************************************************************/
+/* Marketing                                                                     */
+/*********************************************************************************/
+
+	.style1 {
+		text-align: center;
+	}
+
+
+	#marketing
+	{
+		padding: 2em 0em;
+	}
+	
+
+/*********************************************************************************/
+/* Contact                                                                     */
+/*********************************************************************************/
+
+	.form-group{
+		margin-bottom:2.5em;
+		transition:all .3s;
+		font-weight:300;
+		}
+
+	.form-label{
+		font-size:1em;
+		color: #252525;
+		display:block;
+		opacity:1;
+		text-align: left;
+	}	
+
+	.contact-form-label{
+		font-size:1em;
+		color: #252525;
+		display:block;
+		opacity:0;
+		text-align: left;
+	}
+
+	.formcontainer {
+		width:100%;
+		box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+		padding:2em;
+		background-color:#fff;
+		border: none;
+		margin:auto;
+	}
+
+	.formcontainercontact {
+		width:600px;
+		box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+		padding:2em;
+		background-color:#fff;
+		border: none;
+		margin:auto;
+	}
+
+	.formcontainercontact input[type=text], select, textarea {
+		text-align: left;
+	}
+
+	.form-control{
+		box-shadow:none;
+		border-radius:0;
+		border-color:#ccc;
+		border-style:none none solid none;
+		width:100%;
+		font-size:1.25em;
+		transition:all .6s;
+		background-color:#fff;
+		font-family: 'Roboto', sans-serif;
+		text-transform:none;
+		color: #252525;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.form-control::placeholder{
+		color:#a8a8a8;
+		padding-left: 3px;
+	}
+	#selector {
+		color:#a8a8a8;
+	}
+
+	#selector option {
+		color:#252525;
+	}
+
+	.form-control:focus{
+		box-shadow:none;
+		border-color:var(--font-hover-color);
+		outline:none;
+	}
+	
+	.form-control:invalid:focus{
+		border-color:red;
+	}
+	.form-control:valid:focus{
+		border-color:green;
+	}
+	
+	.btn{
+		background: #0271ba;
+		border:1px solid #aaa;
+		border-radius:3px;
+		color:var(--font-color);
+		font-size:1em;
+		padding:10px 50px;
+		text-transform:uppercase;
+		color:#fff;
+	}
+	.btn:hover{
+		border-color:var(--font-hover-color);
+		color:var(--font-hover-color);
+	}
+	textarea{
+		resize:none;
+	}
+	
+	#reg.form-control {
+		text-transform: uppercase;
+	}
+	
+	.focused > .form-label{
+		opacity:1;
+		transform:translateX(0px);
+	
+	}
+
+/*********************************************************************************/
+/* FAQ                                                                     */
+/*********************************************************************************/
+
+.collapsible {
+	font-family: 'poppins', sans-serif;
+	background-color: #fff;
+	color: #000;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	outline: none;
+	font-size: 18px;
+	border: 2px solid;
+	border-radius:5px;
+	margin-top: 5px;
+  }
+  
+  .faqactive {
+	background-color: #0271ba;
+	color:#fff;
+  }
+  
+  .content {
+	padding: 16px;
+	display: none;
+	overflow: hidden;
+	background-color: #ddddddb6;
+	border-radius:5px;
+	font-size: 16px;
+  }
+
+  .content p {
+	margin-bottom:0px;
+  }
+
+  .collapsible:after {
+	content: '\002B'; /* Unicode character for "plus" sign (+) */
+	font-size: 18px;
+	color: #000;
+	float: right;
+	margin-left: 5px;
+  }
+  
+  .faqactive:after {
+	content: "\002d"; /* Unicode character for "minus" sign (-) */
+  }
+
+  .faq-sub {
+	font-size:16px;
+	font-weight: 400;
+}
+
+
+/*********************************************************************************/
+/* About                                                                     */
+/*********************************************************************************/
+
+.bplist ul {
+	list-style: disc;
+	padding-left:20px;
+}
+
+
+/*********************************************************************************/
+/* Social items                                                                     */
+/*********************************************************************************/
+
+		/* Style all font awesome icons */
+
+		.contact-item {
+			display:flex;
+			align-items: center;
+			padding: 5px;
+			margin: 20px 0px 20px 10px;
+		}
+	
+		.contact-item p {
+			align-items: center;
+			margin-bottom: 0px;
+			margin-left: 10px;
+		}
+
+		.wa-grabber {
+			opacity: 0;
+		}
+	
+		.fa-facebook {
+			padding: 12px;
+			width: 40px;
+			text-align: center;
+			text-decoration: none;
+			background: #3B5998;
+			color: white;
+			display: block;
+	
+		  }
+	
+		/* Add a hover effect if you want */
+		.fa:hover {
+			opacity: 0.7;
+		}  
+
+/*********************************************************************************/
+/* Bike manufacturers                                                                     */
+/*********************************************************************************/
+
+.logo-item img {
+	width:100px;
+	height:100px;
+
+}
+
+.logo-item {
+	width: 49%;
+	display:inline-block;
+	text-align: center;	
+	box-sizing: border-box;
+}
+
+.logo-item-mobile {
+	display:none;
+}
+
+.bikes-title {
+	text-align: center;
+	font-weight:600;
+}
+
+.bikes-text {
+	text-align: center;
+	font-size:14px;
+}
+
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+	#copyright
+	{
+		padding: 1em 0em;
+		color:rgb(124, 124, 124);
+	}
+
+	.links {
+		margin-bottom:10px;
+		margin-top: 10px;
+	}
+
+	.links a {
+		margin-bottom: 10px;
+		color:rgb(78, 78, 78);
+	}
+	
+	html {
+		visibility: visible;
+		opacity: 1;
+	}
+
+}
