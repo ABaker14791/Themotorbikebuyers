@@ -36,6 +36,10 @@
 		{
 			color: #FFF;
 		}
+
+		#logo {
+			width:420px;
+		}
 	
 		#logo a {
 			display: block;
@@ -55,8 +59,10 @@
 	{
 		position: absolute;
 		right: 0em;
-		top: 3em;
-
+		top: 1.8em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	#nav > div > div > ul > li

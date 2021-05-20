@@ -47,7 +47,7 @@
 
 				<!-- Logo -->
 				<div id="logo">
-					<a href="/"> <img src="images/MBBuyers_logo_small.jpg" alt="the motorbike buyers logo image"> </a>
+					<a href="/"> <img src="images/mbuyers_curves_final.svg" alt="the motorbike buyers logo image"> </a>
 				</div>
 
 				<!-- Nav -->
