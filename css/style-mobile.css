@@ -250,19 +250,19 @@
 
 	.welcome {
 		position: absolute;
-		top: 20%;
+		top: 50%;
 		left: 20%;
 		padding: 0px;
 		letter-spacing: -1px;
-		font-size: 1em;
+		font-size: 1.3em;
 		color: #fff;
 		font-weight: 400;
+		transform: translateY(-50%);
 	  }
 
 
 	.welcome p {
 		line-height: 120%;
-
 	}
 
 	

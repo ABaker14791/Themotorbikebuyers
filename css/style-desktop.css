@@ -332,7 +332,7 @@
 
 	#main
 	{
-		padding: 3em 0em 3em 0em;
+		/* padding: 3em 0em 3em 0em; */
 		font-size:18px;
 		background-color: #F2F2F2;
 	}
@@ -387,13 +387,14 @@
 
 	.welcome {
 		position: absolute;
-		top: 15%;
+		top: 50%;
 		left: 20%;
 		padding: 0px;
 		letter-spacing: -1px;
 		color: #fff;
 		font-weight: 400;
 		font-size:clamp(2rem, 4vw, 4rem);
+		transform: translateY(-50%);
 	  }
 
 	  .welcome p {
@@ -441,7 +442,7 @@
 
 	#marketing
 	{
-		padding: 4em 0em 3em 0em;
+		padding: 5em 0em ;
 	}
 
 /*********************************************************************************/
@@ -449,7 +450,7 @@
 /*********************************************************************************/
 
 .bikes-brands {
-	padding: 4em 0em 3em 0em;
+	padding: 6em 0em ;
 }
 
 .bikes-title {
