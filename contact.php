@@ -38,11 +38,7 @@
 
 		<!-- Header -->
 <div class="container">
-			
-
-
-
-	<div id="header">
+	<header id="header">
 		<input type="checkbox" class="toggler">
 		<div class="hamburger"><div></div></div>
 
@@ -64,8 +60,7 @@
 					</div>
 				</div>		
 			</nav>
-
-	</div>
+	</header>
 </div>
 
 
@@ -101,7 +96,7 @@
 
 		<!-- Header -->
 
-		<div id="featured">
+		<main id="featured">
 			<div class="container">
 				<div class="row">
 					<div class="column50">
@@ -226,11 +221,11 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</main>
 
-		<div class="container">
-				<div id="topbar">
-						<div class="reg-form">
+		<section class="container">
+			<div id="topbar">
+					<div class="reg-form">
 						<form id="reg1" autocomplete="off" action="vehicledetails.php">
 							<label for="fname">Enter reg here for your free bike valuation now.</label><br>
 							<input type="text" maxlength="8" class="regtext" name="q" placeholder="Enter reg">
@@ -239,16 +234,23 @@
 							<button type="submit" class="btn">Continue</button>
 						</div>
 						</form>
-						</div>	
-				</div>		
-			</div>
+					</div>	
+			</div>		
+		</section>
 
-		<!-- Copyright -->
-		<div id="copyright">
+		<!-- Footer -->
+		<footer id="copyright">
 			<div class="container">
-			<small>&copy; Copyright 2021, The Motorbike Buyers.</small>
+				<div class="links"> 
+					<a href="/">Home</a>
+					<a href="/about.html">About Us</a>
+					<a href="/contact.php">Contact Us</a>
+					<a href="/vehicledetails.php">Vehicle Details</a>
+					<a href="/faq.html">FAQs</a>
+				</div>
+				<small>&copy; Copyright 2021, The Motorbike Buyers.</small>
 			</div>
-		</div>
+		</footer>
 
 	</body>
 </html>

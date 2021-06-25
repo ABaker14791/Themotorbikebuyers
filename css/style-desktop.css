@@ -411,7 +411,7 @@
 		padding: 3em 0em 3em 0em;
 	}
 
-	#featured > .row {
+	#featured .row {
 		display:flex;
 	}
 
@@ -493,7 +493,7 @@
 	
 	#copyright {
 		padding: 1em 0em;
-		color:rgb(124, 124, 124);
+		color:#fff;
 	}
 
 	.links {

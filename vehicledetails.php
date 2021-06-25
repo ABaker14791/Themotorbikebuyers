@@ -31,40 +31,35 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<a href="https://api.whatsapp.com/send?phone=447770444569" class="float" target="_blank">
-        <i class="fa fa-whatsapp my-float"></i>
-        <span class="wa-grabber">Click here to get an instant WhatsApp quote!</span>
+        	<i class="fa fa-whatsapp my-float"></i>
+        	<span class="wa-grabber">Click here to get an instant WhatsApp quote!</span>
 		</a>
 
 		<!-- Header -->
 		<div class="container">
-			
+			<header id="header">
+				<input type="checkbox" class="toggler">
+				<div class="hamburger"><div></div></div>
 
+					<!-- Logo -->
+					<div id="logo">
+						<a href="/"> <img src="images/mbuyers_curves_final.svg" alt="the motorbike buyers logo image"> </a>
+					</div>
 
-
-			<div id="header">
-			<input type="checkbox" class="toggler">
-			<div class="hamburger"><div></div></div>
-
-				<!-- Logo -->
-				<div id="logo">
-					<a href="/"> <img src="images/mbuyers_curves_final.svg" alt="the motorbike buyers logo image"> </a>
-				</div>
-
-				<!-- Nav -->
-				<nav id="nav">
-					<div>
+					<!-- Nav -->
+					<nav id="nav">
 						<div>
-							<ul>
-								<li><a href="/">Home</a></li>
-								<li><a href="/about.html">About Us</a></li>
-								<li><a href="/contact.php">Contact Us</a></li>
-								<li><a href="/faq.html">FAQs</a></li>
-							</ul>
-						</div>
-					</div>		
-				</nav>
-
-			</div>
+							<div>
+								<ul>
+									<li><a href="/">Home</a></li>
+									<li><a href="/about.html">About Us</a></li>
+									<li><a href="/contact.php">Contact Us</a></li>
+									<li><a href="/faq.html">FAQs</a></li>
+								</ul>
+							</div>
+						</div>		
+					</nav>
+			</header>
 		</div>
 
 
@@ -121,7 +116,7 @@
 								}			
 ?>
 
-		<div id="featured">
+		<main id="featured">
 			<div class="container">
 				<div class="row">
 					<div class="12u">
@@ -254,7 +249,7 @@
 					</div>		
 				</div>
 			</div>
-		</div>
+		</main>
 
 
 
@@ -275,18 +270,18 @@
 		request.open('GET', url, true);
 
 		request.onload = function() {
-  if (request.status === 200) {
-    const data = JSON.parse(request.responseText);
-    let option;
-    for (let i = 0; i < data.length; i++) {
-      option = document.createElement('option');
-      option.text = data[i].DATE;
-      option.value = data[i].DATE;
-      dropdown.add(option);
-    }
-   } else {
-    // Reached the server, but it returned an error
-  }   
+			if (request.status === 200) {
+				const data = JSON.parse(request.responseText);
+				let option;
+				for (let i = 0; i < data.length; i++) {
+				option = document.createElement('option');
+				option.text = data[i].DATE;
+				option.value = data[i].DATE;
+				dropdown.add(option);
+				}
+			} else {
+				// Reached the server, but it returned an error
+			}   
 }
 
 request.onerror = function() {
@@ -335,11 +330,18 @@ manurequest.send();
 </script>
 
 		<!-- Copyright -->
-		<div id="copyright">
+		<footer id="copyright">
 			<div class="container">
-			<small>&copy; Copyright 2021, The Motorbike Buyers.</small>
+				<div class="links"> 
+					<a href="/">Home</a>
+					<a href="/about.html">About Us</a>
+					<a href="/contact.php">Contact Us</a>
+					<a href="/vehicledetails.php">Vehicle Details</a>
+					<a href="/faq.html">FAQs</a>
+				</div>
+				<small>&copy; Copyright 2021, The Motorbike Buyers.</small>
 			</div>
-		</div>
+		</footer>
 
 	</body>
 </html>
