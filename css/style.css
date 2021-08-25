@@ -113,7 +113,8 @@
 						margin: 0 auto;
 						width: auto;
 					}
-			
+		
+
 			header h2
 			{
 				font-weight: 600;
@@ -165,6 +166,8 @@
 	#header
 	{
 		position: relative;
+		align-items: center;
+		justify-content: center;
 	}
 
 		#header .container
@@ -190,6 +193,7 @@
 			font-weight: 600;
 			color: #252525;
 		}
+
 
 /*********************************************************************************/
 /* Nav                                                                           */
