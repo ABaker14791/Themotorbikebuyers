@@ -57,7 +57,7 @@
 	{
 		position: absolute;
 		right: 0em;
-		top: 1.4em;
+		top: 1.2em;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -385,7 +385,7 @@
 
 	.welcome {
 		position: absolute;
-		top: 50%;
+		top: 45%;
 		left: 20%;
 		padding: 0px;
 		letter-spacing: -1px;
