@@ -28,7 +28,7 @@
 			<link rel="stylesheet" href="css/style-mobile.css" />
 
 	</head>
-	<body>
+<body>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<a href="https://api.whatsapp.com/send?phone=447770444569" class="float" target="_blank">
@@ -213,9 +213,6 @@
 														return valid;
 													}
 										</script>
-
-
-
 							  </form>
 						</section>
 					</div>
@@ -247,8 +244,9 @@
 					<a href="/contact.php">Contact Us</a>
 					<a href="/vehicledetails.php">Vehicle Details</a>
 					<a href="/faq.html">FAQs</a>
+					<a href="/tradeportal.php">Trade Portal</a>
 				</div>
-				<small>&copy; Copyright 2021, The Motorbike Buyers.</small>
+				<small>&copy; Copyright 2022, The Motorbike Buyers.</small>
 			</div>
 		</footer>
 

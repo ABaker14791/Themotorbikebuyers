@@ -2,7 +2,7 @@
 <html>
 	<head>
 		</script>
-		<title>MOTORBIKEBUYERS.co.uk - Fast Online Quote</title>
+		<title>THEMOTORBIKEBUYERS.co.uk - Fast Online Quote</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Get a quick quote & sell your motorbike fast for cash today. We buy any bike and will collect free of charge." />
@@ -119,7 +119,6 @@
 		<main id="featured">
 			<div class="container">
 				<div class="row">
-					<div class="12u">
 						<section>
 							
 
@@ -245,8 +244,7 @@
 							<?php
 							endif;
 							?>
-						</section>
-					</div>		
+						</section>	
 				</div>
 			</div>
 		</main>
@@ -338,6 +336,7 @@ manurequest.send();
 					<a href="/contact.php">Contact Us</a>
 					<a href="/vehicledetails.php">Vehicle Details</a>
 					<a href="/faq.html">FAQs</a>
+					<a href="/tradeportal.php">Trade Portal</a>
 				</div>
 				<small>&copy; Copyright 2021, The Motorbike Buyers.</small>
 			</div>
